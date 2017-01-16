@@ -7,21 +7,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ngAuthApp</a>
+          <a class="navbar-brand" href="#">ngMEANTodo</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a routerLink='/'>Home</a></li>
+            <li><a routerLink='/'></a></li>
           </ul>
           <ul class='nav navbar-nav navbar-right'>
-              <li><a routerLink='/profile'>Profile</a></li>
-              <li> <a (click)='auth.login()' *ngIf='!auth.authenticated()' >Login</a> </li>
-              <li> <a (click)='auth.logout()' *ngIf='auth.authenticated()' > Logout </a> </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class='container'>
-        <router-outlet></router-outlet>
+          <div class='row'>
+              <div class='col-md-8 col-md-offset-2'>
+                  <todos></todos>
+              </div>
+          </div>
     </div>
